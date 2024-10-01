@@ -5,25 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fatch API</title>
+    <style>
+        .style {
+            background-color: cadetblue;
+            color: #fff;
+            padding: 1rem;
+            margin-block: 1rem;
+            border-radius: 0.5rem;
+        }
+    </style>
 </head>
 
 <body>
     <button onclick="getFunc()">FetchJs</button>
     <button onclick="appFunc()">AppJs</button>
     <button onclick="photoFunc()">See Photo</button>
+    <button onclick="userFunc()">User Info</button>
 
-    <div id="img_container">
-        <picture>
-            <img src="" alt="">
+    <!-- img information -->
+    <div id="img_container"></div>
 
-        </picture>
-    </div>
+    <!-- user information -->
+    <section id="user_info"></section>
 
     <!-- script -->
     <script src="fatch.js"></script>
     <script src="app.js"></script>
     <script src="photo.js"></script>
     <script src="video.js"></script>
+    <script src="user.js"></script>
 </body>
 
 </html>

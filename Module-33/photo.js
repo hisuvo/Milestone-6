@@ -14,6 +14,7 @@ function photo(data) {
         }
 
         let picture = document.createElement("picture");
+        image.classList.add("style")
         const { id, title, url, thumbnailUrl } = item;
 
         picture.innerHTML = `
